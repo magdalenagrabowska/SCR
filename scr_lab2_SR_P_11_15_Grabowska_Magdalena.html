@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>  
+<TITLE> Tytuł strony </TITLE>  
+<SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
+function F1(){
+alert('kilknięto przycisk');
+}
+function F2(){
+document.write("Ostatnia modyfikacja pliku: "+document.lastmodified+"."); 
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FONT COLOR="green"><H1>Rozdział numer jeden</H1></FONT>
+<P> Akapit numer jeden </P>
+Zwykły przykładowy tekst.
+<P> Akapit numer dwa </P>
+<BUTTON ONCLICK="F1();">No kliknij, no</BUTTON>
+<BR>
+<B> Zwykły pogrubiony tekst. </B>
+<FONT SIZE="5"><H2> Rodział numer dwa</H2></FONT>
+<OL>
+    <LI> element</LI>
+    <LI><FONT COLOR="blue">element ale na niebiesko</FONT></LI>
+    <LI><FONT COLOR="red">element ale na czerwono</FONT></LI>
+</OL>
+<I> Zwykły tekst napisany kursywą. </I> <BR>
+Zwykła tabela   : <BR> <BR>
+<TABLE BORDER=3 WIDTH=200 HEIGHT=200 ALIGN=center> 
+     <TR><TD ALIGN=center> 1 </TD><TD ALIGN=right> 2 </TD> <TD ALIGN=right> 3 </TD></TR> 
+     <TR><TD ALIGN=center> 4 </TD><TD ALIGN=right> 5 </TD> <TD ALIGN=right> 6 </TD></TR> 
+    <TR><TD ALIGN=center > 7 </TD><TD ALIGN=right> 8 </TD> <TD ALIGN=right> 9 </TD></TR> 
+ </TABLE>
+ <FONT SIZE="4"><H3> Rozdział numer trzy</H3></FONT>
+ Kolejna porcja zwykłego tekstu.
+<A HREF="https://www.google.com/">Link do strony google.</A>
+<IMG SRC="delfin.png"> <BR>
+Zwykły obrazek delfina. <BR>
+<FORM>
+    <INPUT TYPE="radio" NAME="pora_roku" VALUE="lato" checked> Lato
+    <INPUT TYPE="radio" NAME="pora_roku" VALUE="wiosna"> Wiosna
+    <INPUT TYPE="radio" NAME="pora_roku" VALUE="jesień"> Jesień
+    <INPUT TYPE="radio" NAME="pora_roku" VALUE="zima"> Zima
+    <BR>
+    <SELECT NAME="wazna_lista"> 
+        <OPTION> pierwsza pozycja 
+        <OPTION SELECTED> druga pozycja
+        <OPTION> trzecia pozycja
+    </SELECT> 
+    
+    <BR>
+    <TEXTAREA NAME="tresc_pytania" ROWS=10 COLS=50 ALIGN=center></TEXTAREA>
+    <BR>
+    <INPUT TYPE="submit" VALUE="wyślij formularz" ONCLICK="F2();">
+</FORM>   
+</BODY>
+</HTML>
